@@ -2,8 +2,7 @@
 
 int main() {
 	
-	int valor_usuario, ind_numero = 1, contador = 0;
-	float media = 0.0;
+	int valor_usuario, ind_numero = 1, contador_pares = 0, soma_pares = 0;
 	
 	printf("| Insira uma sequencia de valores e digite 0 para finalizar\n\n");
 	
@@ -16,12 +15,15 @@ int main() {
 		}
 		
 		if (valor_usuario % 2 == 0) {
-			media = ((media * contador) + valor_usuario) / (contador + 1); // media dos valores pares;
-			contador++;
+			soma_pares += valor_usuario;
+			contador_pares++;
 		}
 		
 		ind_numero++;
+		
 	} while (1);
+	
+	float media = (float) soma_pares / contador_pares;
 	
 	printf("\n- A media dos valores pares inseridos e de: %.1f", media);
 }
