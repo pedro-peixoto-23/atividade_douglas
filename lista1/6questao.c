@@ -33,7 +33,7 @@ int main() {
 	}
 	printf("\n- Valor total do Morango: R$ %.2f", preco_morango);
 	printf("\n- Valor total da Maca: R$%.2f", preco_maca);
-	printf("\n- Desconto sobre o valor total: R$%.2f", valor_total - (preco_maca - preco_morango));
+	printf("\n- Desconto sobre o valor total: R$%.2f", valor_total - (preco_maca + preco_morango));
 	printf("\n- O valor final a ser pago e de R$%.2f", valor_total);
  
 	return 0;
