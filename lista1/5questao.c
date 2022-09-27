@@ -15,28 +15,28 @@ int main() {
 	
 	switch (escolha_usuario) {
 	    
-	    case 0: // escolheu alcool
-	        if (quant_litros <= 20) {
-		        valor_final = quant_litros * (valor_alcool * 0.97);
-		    } else {
-			    valor_final = quant_litros * (valor_alcool * 0.95);
-		    }
-		break;
-		
-		case 1: // escolheu gasolina
-		    if (quant_litros <= 20) {
-			    valor_final = quant_litros * (valor_gasolina * 0.96);
-		    } else {
-			    valor_final = quant_litros * (valor_gasolina * 0.94);
-		    }
-		break;
+        case 0: // escolheu alcool
+            if (quant_litros <= 20) {
+                valor_final = quant_litros * (valor_alcool * 0.97);
+            } else {
+                valor_final = quant_litros * (valor_alcool * 0.95);
+            }
+        break;
 
-		default:
-		    printf("\n- Voce inseriu uma opcao invalida!");
-		break;
-	}
-	
-	printf("\n- O valor total a ser pago e: R$%.2f", valor_final);
-		
-	return 0;
+        case 1: // escolheu gasolina
+            if (quant_litros <= 20) {
+                valor_final = quant_litros * (valor_gasolina * 0.96);
+            } else {
+                valor_final = quant_litros * (valor_gasolina * 0.94);
+            }
+        break;
+
+        default:
+            printf("\n- Voce inseriu uma opcao invalida!");
+        break;
+    }
+
+    printf("\n- O valor total a ser pago e: R$%.2f", valor_final);
+
+    return 0;
 }
