@@ -4,17 +4,17 @@ int main() {
 	
 	float ind_poluicao;
 	
-	printf("| Insira o indice de poluicao (0.05 - 0.25): ");
+	printf("| Insira o indice de poluicao: ");
 	scanf("%f", &ind_poluicao);
 	
-	if (ind_poluicao < 0.3) {
+	if (ind_poluicao >= 0.05 && ind_poluicao <= 0.25) { // de 0.05 ate 0.25
 		printf("\n- Indice de poluicao aceitavel!");
-	} else if (ind_poluicao < 0.4) { // maior ou igual a 0.3 e menor que 0.4
-		printf("\n- Grupo 1: seu indice de poluicao esta em %f e e necessario a suspensao das atividades!", ind_poluicao);
-	} else if (ind_poluicao < 0.5) { // maior ou igual a 0.4 e menor que 0.5
-		printf("\n- Grupo 1 e 2: seu indice de poluicao esta em %f e e necessario a suspensao das atividades!", ind_poluicao);
-	} else { // maior ou igual a 0.5
-		printf("\n- Grupo 1, 2 e 3: seu indice de poluicao esta em %f e e necessario a suspensao das atividades!", ind_poluicao);
+	} else if (ind_poluicao >= 0.3 && ind_poluicao < 0.4) { // de 0.3 ate 0.39
+		printf("\n- As empresas do grupo 1 devem suspender as atividades!");
+	} else if (ind_poluicao >= 0.4 && ind_poluicao < 0.5) { // de 0.4 ate 0.49
+		printf("\n- As empresas do grupo 1 e 2 suspender as atividades!");
+	} else if (ind_poluicao >= 0.5) { // de 0.5 em diante
+		printf("\n- As empresas do grupo 1, 2 e 3 devem suspender as atividades!");
 	}
  
 	return 0;
