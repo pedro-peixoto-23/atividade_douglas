@@ -1,7 +1,3 @@
-// Faça um programa que recebe os códigos dos 
-// produtos e as quantidades consumidas de 
-//cada um deles e indique o valor total a ser pago.
-
 #include <stdio.h>
 
 int main() {
